@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap - 1st Project</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body{
+        background-color: #f0f0f0;
+    }
+
+    .welcome-panel{
+        margin: 0px;
+    }
+
+    .welcome-horzbar{
+        height: 2px;
+        background-image: linear-gradient(60deg,rgba(193,59,255,1) 0%, rgb(25, 247, 255) 50%, rgb(255, 0, 221) 100%);
+        background-size: 400% 400%;
+
+        animation: welcome-gradient 10s ease infinite;
+    }
+
+    .main-panel{
+        margin: 20px;
+    }
+
+    .stredit{
+        border-color: #383838;
+    }
+
+    .btn-submit{
+        text-align: center;
+        float: right;
+        background-color: #8b3dff;
+        height: auto;
+        width: 90px;
+        border-radius: 5px;
+    }
+
+    .btn-submit:hover{
+        background-color: #9956ff;
+    }
+
+    footer{
+        background-color: rgba(193,59,255,1);
+        text-align: center;
+    }
+
+    /* texts */
+
+    .text-maintitle{
+        text-align: center;
+        background-image: linear-gradient(60deg,rgba(193,59,255,1) 0%, rgb(25, 247, 255) 50%, rgb(255, 0, 221) 100%);
+        background-size: 400% 400%;
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        animation: welcome-gradient 10s ease infinite;
+    }
+
+    @keyframes welcome-gradient{
+        0%{
+            background-position: 0% 50%;
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+    .text-maintitle,
+    .text-signin,
+    .text-signup{
+        color: #383838;
+    }
+
+    .text-logindata{
+        width: 10%;
+    }
+
+    .text-titlecontent{
+        text-align: center;
+    }
+
+    .text-contact{
+        color: #f0f0f0;
+    }
+  </style>
+<body>
+    <div class="welcome-panel">
+        <h1 class="text-maintitle display-1">Welcome!!!</h1>
+        <hr class="welcome-horzbar">
+    </div>
+    <div class="main-panel">
+        <br>
+        <div class="panel-signin">
+            <h3 class="text-signin">First time here? <b>Sign in</b></h3>
+            <a class="btn-submit btn-primary" href="#" role="button">Submit</a>
+            <br>
+            <div class="text-logindata">
+                <label><b>E-mail</b></label>
+            </div>
+            <input class="stredit form-control" type="text" name="email-signin">
+            <br>
+            <div class="text-logindata">
+                <label><b>Password</b></label>
+            </div>
+            <input class="stredit form-control" type="text" name="pwd-signin">
+        </div>
+        <br>
+        <div class="panel-signup">
+            <h3 class="text-signup">Already have an account? <b>Sign up</b></h3>
+            <a class="btn-submit btn-primary" href="#" role="button">Submit</a>
+            <br>
+            <div class="text-logindata">
+                <label><b>E-mail</b></label>
+            </div>
+            <input class="stredit form-control" type="text" name="email-signup">
+            <br>
+            <div class="text-logindata">
+                <label><b>Password</b></label>
+            </div>
+            <input class="stredit form-control" type="text" name="pwd-signup">
+        </div>
+        <br>
+        <br>
+        <h4 class="text-content text-titlecontent display-5">Main content</h4>
+        <br>
+        <div class="panel-content">
+            <p class="text-content">
+                With improbable finesse it buffs up some of the oldest tropes of storytelling
+                and then gives them a mischievous tilt, so that we appear to be watching a
+                celebration of a genre and a sneaky subversion of it at the same time.
+            </p>
+            <p class="text-content">
+                Here is a movie of the times, funny, enjoyable, perfect-looking, and altogether
+                original in a way that might cause us to look again at the meaning of the word.
+                The most effective moments arrive in the form of clever visual gags
+                related to well-known fairy tales.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+    <p class="text-contact display-6">Get in touch!</p>
+    <br>
+    <p class="text-contact display-6">[e-mail]</p>
+    <p class="text-contact display-6">[phone]</p>
+    </footer>
+</body>
+</html>
